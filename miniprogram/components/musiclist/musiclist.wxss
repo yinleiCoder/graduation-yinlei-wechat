@@ -1,0 +1,23 @@
+/* components/musiclist/musiclist.wxss */
+.musiclist-container{
+  display: flex;
+  padding: 14rpx 20rpx;
+  align-items: center;
+}
+.musiclist-index{
+  color: #888;
+  font-size: 34rpx;
+  width: 80rpx;
+}
+.musiclist-info{
+  flex-grow: 1;
+}
+.musiclist-name{
+  font-size: 34rpx;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.playing view{
+  color: #FFE431;
+}

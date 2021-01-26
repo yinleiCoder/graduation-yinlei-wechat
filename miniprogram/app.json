@@ -2,13 +2,18 @@
   "pages": [
     "pages/joy/joy",
     "pages/square/square",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/musiclist/musiclist",
+    "pages/player/player"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarBackgroundColor": "#FFE431",
+    "navigationBarTitleText": "公考相伴",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

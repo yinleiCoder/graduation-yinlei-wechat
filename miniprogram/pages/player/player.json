@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "yl-processbar": "/components/processbar/processbar",
+    "yl-lyric": "/components/lyric/lyric"
+  }
+}
