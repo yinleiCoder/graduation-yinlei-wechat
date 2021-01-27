@@ -1,0 +1,21 @@
+<!--components/postcontrol/postcontrol.wxml-->
+<view class="post-control">
+  <view class="control-item" bindtap="onComment">
+    <text>评论</text>
+  </view>
+  <view class="control-item share">
+    <button open-type="share" class="share-btn" data-postid="{{postid}}" data-post="{{post}}">
+      <text>分享</text>
+    </button>
+  </view>
+</view>
+
+<yl-login modalShow="{{loginShow}}" bind:loginsuccess="onLoginSuccess" bind:loginfail="onLoginFail"/>
+
+<yl-bottommodal modalShow="{{modalShow}}">
+  <!-- 模板消息推送需要form -->
+  <form slot="modal-content" bindsubmit="onSendComment">
+    <textarea name="content" class="comment-content" placeholder="这里写评论哟~" value="{{content}}" fixed="true"></textarea>
+    <button class="send-comment-btn"  form-type="submit" >评论</button>
+  </form>
+</yl-bottommodal>

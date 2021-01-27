@@ -1,3 +1,10 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "yl-search": "/components/search/search",
+    "yl-login": "/components/login/login",
+    "yl-postcard": "/components/postcard/postcard",
+    "yl-postcontrol": "/components/postcontrol/postcontrol"
+  },
+  "navigationBarTitleText": "广场",
+  "enablePullDownRefresh": true
 }

@@ -1,0 +1,9 @@
+/* components/login/login.wxss */
+.login-btn{
+  font-size: 32rpx;
+  height: 80rpx;
+  color: #fff;
+  background-color: #FFE431;
+  margin: 100rpx;
+  border-radius: 14rpx;
+}

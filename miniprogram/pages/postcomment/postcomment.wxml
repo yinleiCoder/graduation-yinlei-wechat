@@ -1,0 +1,34 @@
+<!--pages/postcomment/postcomment.wxml-->
+<scroll-view scroll-y="true" class="comment-container">
+  <view class="post-card">
+    <yl-postcard post="{{post}}"/>
+  </view>
+
+  <view class="tab">
+    <view class="tab-item">评论区域:</view>
+  </view>
+
+  <view class="comment-list">
+    <block wx:for="{{commentList}}" wx:key="_id"> 
+      <view class="comment">
+        <view class="comment-title">
+          <image class="comment-avatar" src="{{item.avatarUrl}}"></image>
+          <view>
+            <text class="comment-nickname">{{item.nickName}}</text>
+            <view class="comment-time">
+              {{item.createTime}}
+            </view>
+          </view>
+        </view>
+        <view class="comment-content">
+          {{item.content}}
+        </view>
+        
+      </view>
+    </block>
+  </view>
+
+  <view class="post-control">
+    <yl-postcontrol postid="{{post._id}}" bind:refreshCommentList="_getPostDetail"/>
+  </view>
+</scroll-view>

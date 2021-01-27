@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "yl-login": "/components/login/login",
+    "yl-bottommodal": "/components/bottommodal/bottommodal"
+  }
+}

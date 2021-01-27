@@ -1,0 +1,43 @@
+/* pages/postcomment/postcomment.wxss */
+.tab{
+  margin-top: 22rpx;
+  margin-bottom: 22rpx;
+  height: 50rpx;
+  margin-left: 22rpx;
+}
+
+.tab-item{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.comment-list{
+  padding: 22rpx;
+}
+.comment{
+  margin-top: 22rpx;
+  margin-bottom: 22rpx;
+}
+.comment-title{
+  display: flex;
+  align-items: center;
+}
+.comment-avatar{
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 14rpx;
+  margin-right: 22rpx;
+}
+.comment-nickname{
+  font-size: 24rpx;
+  font-weight: bold;
+}
+.comment-content{
+  font-size: 22rpx;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+}
+.comment-time{
+  font-size: 22rpx;
+  color: gray;
+  text-align: right;
+}

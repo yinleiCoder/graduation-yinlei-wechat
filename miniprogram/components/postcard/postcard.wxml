@@ -1,0 +1,18 @@
+<!--components/postcard/postcard.wxml-->
+<view class="post">
+  <view class="post-title">
+    <image class="post-portrait" src="{{post.avatarUrl}}"></image>
+    <view class="post-box">
+      <view class="post-nickname">{{post.nickName}}</view>
+      <view class="post-time">{{_createTime}}</view>
+    </view>
+  </view>
+  <view class="post-content">{{post.content}}</view>
+  <view class="post-img">
+    <block wx:for="{{post.img}}" wx:key="{{index}}">
+      <image class="img" src="{{item}}" mode="aspectFill" catch:tap="onPreviewImg"
+      data-imgsrc="{{item}}"
+      data-imgs="{{post.img}}"></image>
+    </block>
+  </view>
+</view>

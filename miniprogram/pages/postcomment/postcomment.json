@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "yl-postcard": "/components/postcard/postcard",
+    "yl-postcontrol": "/components/postcontrol/postcontrol"
+  },
+  "navigationBarTitleText": "帖子详情"
+}

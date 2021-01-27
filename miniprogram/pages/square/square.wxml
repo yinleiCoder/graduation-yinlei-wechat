@@ -1,2 +1,24 @@
 <!--pages/square/square.wxml-->
-<text>pages/square/square.wxml</text>
+<view class="squre-container">
+  <view class="header">
+    <view class="publish-container" bindtap="onPublish">
+      <i class="iconfont icon-fabujianying"></i>
+    </view>
+    <view class="search-container">
+      <yl-search bind:search="onSearch"/>
+    </view>
+  </view>
+
+  <view class="post-list">
+    <block wx:for="{{postList}}" wx:key="_id">
+      <view class="post-panel">
+        <yl-postcard post="{{item}}" data-postid="{{item._id}}" bindtap="goComment"/>
+        <yl-postcontrol postid="{{item._id}}" post="{{item}}"/>
+      </view>
+    </block>
+  </view>
+
+  <yl-login modalShow="{{modalShow}}" bind:loginsuccess="onLoginSuccess" bind:loginfail="onLoginFail">
+  
+  </yl-login>
+</view>

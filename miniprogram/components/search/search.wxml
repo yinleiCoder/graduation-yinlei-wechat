@@ -1,0 +1,5 @@
+<!--components/search/search.wxml-->
+<view class="search-container">
+  <input class="bar" placeholder="{{placeholder}}" bindinput="onInput"></input>
+  <view class="search" bindtap="onSearch">搜索</view>
+</view>
