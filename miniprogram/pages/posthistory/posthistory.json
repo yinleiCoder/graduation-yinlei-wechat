@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "yl-postcard": "/components/postcard/postcard"
+  },
+  "navigationBarTitleText": "我发布过的动态"
+}

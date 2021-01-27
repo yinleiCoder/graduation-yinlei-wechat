@@ -1,42 +1,41 @@
-// pages/profile/profile.js
+// pages/posthistory/posthistory.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    postList: [],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this._getListByCloud();
   },
-
+  _getListByCloud() {
+    wx.showLoading({
+      title: 'loading...',
+    })
+    wx.cloud.callFunction({
+      name: 'mypost',
+      data: {
+        $url: 'getMyPublishPost',
+      }
+    }).then(res => {
+      console.log(res)
+      this.setData({
+        postList: res.result
+      })
+      wx.hideLoading()
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
 
-  },
-  onTapQRCode(){
-    wx.showLoading({
-      title: '小程序码生成中...',
-      mask: true,
-    })
-    wx.cloud.callFunction({
-      name: 'genQRCode',
-    }).then(res => {
-      console.log(res);
-      const fileId = res.result;
-      wx.previewImage({
-        urls: [fileId],
-        current: fileId
-      })
-      wx.hideLoading()
-    })
   },
 
   /**

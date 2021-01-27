@@ -1,0 +1,10 @@
+<!--pages/posthistory/posthistory.wxml-->
+<view>
+  <block wx:for="{{postList}}" wx:key="_id">
+    <view class="post-pannel">
+      <yl-postcard
+      post="{{item}}"
+      />
+    </view>
+  </block>
+</view>

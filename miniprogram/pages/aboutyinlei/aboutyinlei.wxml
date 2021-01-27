@@ -1,0 +1,46 @@
+<!--pages/aboutyinlei/aboutyinlei.wxml-->
+<view class="title-contianer">
+  <view></view>
+  <view></view>
+  <view></view>
+  <view>
+    <text>我有话想说</text>
+  </view>
+</view>
+
+<view class="basic-info">
+  <view><text class="strong">尹磊</text></view>
+  <view><text class="strong">出生年月</text>：1998年五月初五</view>
+  <view><text class="strong">专业</text>：计算机学院软件工程</view>
+  <view>
+    <text class="strong">热爱</text>：探索未知
+  </view>
+  <view>
+    <text class="strong">喜欢</text>：大前端开发、原生APP开发、后端开发、微信小程序开发、大数据分析、算法、平面设计、UI设计。
+  </view>
+  <view>
+    <text class="strong">技术栈</text>：Vue、React、Flutter、Go、Python、Tensorflow、C++、Java、Kotlin、Dart、FFmepg、WebRTC、Docker
+  </view>
+  <view>
+    <text class="strong">座右铭</text>：实践是检验真理的唯一标准.
+  </view>
+  <view>
+    <text class="strong">微信公众号</text>：尹哥
+  </view>
+  <view>
+    <text class="strong">个人站点</text>：yinleilei.com
+  </view>
+  <view>
+    <text class="strong">公考相伴微信小程序</text>：微信云开发
+  </view>
+</view>
+
+
+<view class="author-img">
+    <image class="yinlei" src="https://giligili-yinlei.oss-cn-shanghai.aliyuncs.com/wechat/iamyinlei.jpg"></image>
+</view>
+
+<view class="end">
+  <text>我们，都在奔赴更美好的明天，祝君马到成功~</text>
+</view>
+  

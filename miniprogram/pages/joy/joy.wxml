@@ -11,3 +11,6 @@
     <yl-playlist playlist="{{item}}"></yl-playlist>
   </block>
 </view>
+
+<official-account></official-account>
+

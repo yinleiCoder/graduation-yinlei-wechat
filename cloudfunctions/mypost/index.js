@@ -69,5 +69,13 @@ exports.main = async (event, context) => {
       detail,
     }
   });
+  const wxContext = cloud.getWXContext();
+  app.router('getMyPublishPost', async (ctx, next) => {
+    ctx.body = await postCollection.where({
+      _openid: wxContext.OPENID,
+    }).orderBy('createTime', 'desc').get().then(res => {
+      return res.data;
+    })
+  });
   return app.serve();
 }

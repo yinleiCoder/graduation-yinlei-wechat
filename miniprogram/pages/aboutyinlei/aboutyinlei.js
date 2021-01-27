@@ -1,4 +1,4 @@
-// pages/profile/profile.js
+// pages/aboutyinlei/aboutyinlei.js
 Page({
 
   /**
@@ -20,23 +20,6 @@ Page({
    */
   onReady: function () {
 
-  },
-  onTapQRCode(){
-    wx.showLoading({
-      title: '小程序码生成中...',
-      mask: true,
-    })
-    wx.cloud.callFunction({
-      name: 'genQRCode',
-    }).then(res => {
-      console.log(res);
-      const fileId = res.result;
-      wx.previewImage({
-        urls: [fileId],
-        current: fileId
-      })
-      wx.hideLoading()
-    })
   },
 
   /**

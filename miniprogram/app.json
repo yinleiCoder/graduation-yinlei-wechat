@@ -6,7 +6,9 @@
     "pages/musiclist/musiclist",
     "pages/player/player",
     "pages/postedit/postedit",
-    "pages/postcomment/postcomment"
+    "pages/postcomment/postcomment",
+    "pages/posthistory/posthistory",
+    "pages/aboutyinlei/aboutyinlei"
   ],
   "requiredBackgroundModes": [
     "audio"
